@@ -1,0 +1,13 @@
+<h1>The Travel'Log'ue App!!</h1>
+
+<h3>Welcome to your personalised travel companion</h3>
+
+<ul>
+  <% @places.each do |place| %>
+    <li>
+      <a href="/places/<%= place.id %>"><%= place.name %></a>
+    </li>
+  <% end %>
+</ul>
+
+<a href="/places/new">Add a New Place</a>
